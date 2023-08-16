@@ -1,4 +1,4 @@
-const data = [
+const movie = [
   {
     title: "Un Français",
     image:
@@ -6,7 +6,7 @@ const data = [
     description: "Un film de diastème",
     rating: 4,
     createdat: "15/04/2015",
-    videourl: "https://www.youtube.com/embed/fHVgxqSs0k8"
+    trailerURL: "https://www.youtube.com/embed/fHVgxqSs0k8"
   },
   {
     title: "Cowboys Et Envahisseurs",
@@ -16,7 +16,7 @@ const data = [
       "Deux heures d'action epoustouflante, des effets spéciaux bluffants",
     rating: 3,
     createdat: "01/01/2023",
-    videourl: "https://www.youtube.com/embed/8_uyEDnipRc"
+    trailerURL: "https://www.youtube.com/embed/8_uyEDnipRc"
   },
   {
     title: "MATRIX",
@@ -26,7 +26,7 @@ const data = [
       "It is the first installment in the Matrix film series, starring Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, and Joe Pantoliano, and depicts a dystopian future in which humanity is unknowingly trapped inside the Matrix, a simulated reality that intelligent machines have created to distract human",
     rating: 4.5,
     createdat: "31/03/1999",
-    videourl: "https://www.youtube.com/embed/8xx91zoASLY"
+    trailerURL: "https://www.youtube.com/embed/8xx91zoASLY"
   },
 ];
-export default data;
+export default movie;

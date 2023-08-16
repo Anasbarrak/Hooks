@@ -15,8 +15,8 @@ function Example() {
   const [description,setDescription]=useState('')
   const [rating,setRating]=useState(0)
   const [createdat,setCreatedat]=useState('')
-  const [videourl,setVideourl]=useState('')
-  console.log(title, image, description, createdat, videourl)
+  const [trailer,setTrailer]=useState('')
+  console.log(title, image, description, createdat, trailer)
   const handleSubmit = () => {
     var object = {
         title: title,
@@ -24,7 +24,7 @@ function Example() {
         description: description,
         rating: rating,
         createdat: createdat,
-        videourl: videourl,
+        trailer: trailer,
     };
     localStorage.setItem('movie', JSON.stringify(object) )
 
@@ -92,7 +92,7 @@ function Example() {
                 type="text"
                 placeholder="movie-history"
                 autoFocus
-                onChange={(e)=>setVideourl(e.target.value)}
+                onChange={(e)=>setTrailer(e.target.value)}
               />
             </Form.Group>
           </Form>

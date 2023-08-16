@@ -1,30 +1,24 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import ReactStars from 'react-stars';
-function Moviecard({props}) {
-    console.log(props)
-  return (
-    <div style={{display:"flex", gap :"7rem", marginBottom: "3rem"}}>
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.image} />
-      <Card.Body>
-        <Card.Title> {props.title}</Card.Title>
-        <Card.Text>
-          {props.description}<br/>
-          <ReactStars
-            count={5}
-            value={props.rating} 
-            size={24}
-            color2={'#ffd700'} /><br/>
-          {props.createdat}
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-   
-    </div>
-  )
-}
+import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Description from './Description';
 
-export default Moviecard
+function MovieCard({ movie }){
+  console.log(movie)
+    return (
+      <Card style={{ width: '14rem', padding: '10px' }}>
+        <Card.Img variant="top" src={movie.image}
+         style={{height:"320px"}}
+         />
+        <Card.Body>
+          <Card.Title>{movie.title}</Card.Title>
+          <Card.Text>{Description}</Card.Text>
+          <Button variant="primary">Go to trailer</Button>
+          <Link to='/Description'>
+            <Description description={movie.description} trailer={movie.trailerURL}/>
+          </Link>
+        </Card.Body>
+      </Card>
+    );
+}
+export default MovieCard

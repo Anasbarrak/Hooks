@@ -6,6 +6,8 @@ import { Route, Routes } from 'react-router-dom';
 import NavScrollExample from './components/Navbar';
 import Register from './components/Register';
 import Acceuil from './components/Acceuil';
+import movie from './components/Data';
+import Description from './components/Description';
 function App() {
   console.log(data)
   const getMovie = () => {
@@ -20,8 +22,9 @@ function App() {
       <NavScrollExample/>
       <Routes>
         <Route path='register' element={<Register/>}/>
-        <Route path='/home' element={<Movielist data={data}/>}/>
+        <Route path='/home' element={<Movielist data={movie}/>}/>
         <Route path='/login' element={<Acceuil/>}/>
+        <Route path='/Description' element={<Description/>}/>
       </Routes>
     </div>
   );

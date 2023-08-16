@@ -20,7 +20,6 @@ function NavScrollExample() {
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
             <Nav.Link href="register">Register</Nav.Link>
-            
             <Nav.Link href="#" disabled>
               Link
             </Nav.Link>

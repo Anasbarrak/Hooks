@@ -17,7 +17,7 @@ function Login() {
         { bool? <Alert key="success" variant="success">
     This is a success alert
   </Alert> : <Alert key="danger" variant="danger">
-    This is not an mail
+    This is not an email
   </Alert>}
         <Card style={{ width: '25rem',backgroundColor:'red' }}>
         <Card.Body>
